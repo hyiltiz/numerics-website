@@ -4,13 +4,14 @@ For more information, see http://andreasviklund.com/templates/variant-multi/
 */
 
 *{font-size: 100%; font-family: candara; margin:0;padding:0;}
-body{line-height: normal; background:white;color:#444;font:100% Verdana,Helvetica,sans-serif;}
+body{line-height: normal; background:#5f5c48;color:#444;font:100% Verdana,Helvetica,sans-serif;}
 p{line-height:1.7em;margin-bottom:15px;}
-a{color: #ec802a;}
+a{color: #0c5561;}
 a:hover{color:#333;}
-h1{color: #0a625e;font-family: candara, Georgia, serif;font-size:2.4em;}
-h2{color: #0d7b77;font-family:Georgia,serif;font-size:2.2em;font-weight:400;margin:0 0 10px 0;}
-h3{color: #0a625e;font-family:Georgia,serif;font-size:1.6em;font-weight:400;margin:0 0 8px;}
+h1{color: #159696;font-family: candara, Georgia, serif;font-size:2.4em;}
+h2{color: #159696;font-family:Georgia,serif;font-size:2.2em;font-weight:400;margin:0 0 10px 0;}
+h3{color: #159696;font-family:Georgia,serif;font-size:1.6em;font-weight:400;margin:0 0 8px;}
+h4{font-size: 1.2em; color: #083848;font-family:Georgia,serif;font-weight:400;margin:0 0 8px;}
 ul,ol,dl{margin:0 0 20px 20px; padding:0;}
 li{padding-bottom:5px;}
 
@@ -20,15 +21,15 @@ li{padding-bottom:5px;}
 #container760{width:760px;}
 #container600{width:600px;}
 
-#header{font-family: candara; background-color: #14a8a2;margin:0 auto;padding:10px 25px;}
+#header{font-family: candara; background-color: #0c5561;margin:0 auto;padding:10px 25px;}
 #header h1{font-family: candara; margin:0;padding:20px 0 10px;}
 #header h1 a{color:#eee;font-family: candara, Georgia, serif;font-size: 44pt;font-weight:400;text-decoration:none;}
 #header h2{color:#ddd;padding:0 0 10px 25px;margin:0;font-family: candara, Georgia, serif;font-size:1.8em;font-weight:400;}
 
-#menu{background-color: #0c7270;height:40px;}
+#menu{background-color: #5f5c48;height:40px;}
 #menu ul{float:right;height:40px;list-style:none;margin:0;padding:0 25px 0 0;}
 #menu ul li{background-color: #0a625e;display:block;float:left;margin:0 0 0 5px;padding:0;}
-#menu ul li a{background-color: #0f8a85;color:#ddd;display:block;font-size:1.4em;padding:10px 12px;text-decoration:none;}
+#menu ul li a{background-color: #262311;color:#ddd;display:block;font-size:1.4em;padding:10px 12px;text-decoration:none;}
 #menu ul li a:hover{color:#fff;}
 #menu ul li a.current{background-color:#eee;color:#333;border-bottom:1px solid #eee;}
 
@@ -44,7 +45,7 @@ li{padding-bottom:5px;}
 #sidebar p{margin:10px 0 10px 10px;}
 #sidebar ul{list-style:none;margin:10px 0 10px 10px;padding:0;}
 #sidebar ul li{margin:0 0 5px 0;}
-#sidebar ul li a{color:#467aa7;font-weight:400;}
+#sidebar ul li a{color: #0c5561;font-weight:400;}
 #sidebar ul.sidemenu {margin:0;}
 #sidebar ul.sidemenu li{display:inline;padding:0;margin:0;}
 #sidebar ul.sidemenu li a{display:block;padding:7px 5px 6px 10px;font-size:1.2em; font-weight:400;text-decoration:none;border-bottom:1px solid #ddd;}
@@ -53,7 +54,7 @@ li{padding-bottom:5px;}
 #sidebar ul.sidemenu ul li a{padding:5px 5px 5px 25px;border:0;font-weight:400;}
 #sidebar ul.sidemenu ul li a:hover{border:0;}
 #sidebar ul li a:hover{color:#333;}
-#sidebar h2{background-color:#467aa7;color:#fff;font-size:1.5em;margin:0 0 0 0;padding:10px;}
+#sidebar h2{background-color: #083848;color:#fff;font-size:1.5em;margin:0 0 0 0;padding:10px;}
 #sidebar h3{font-size:1.4em; padding:10px 10px 0 10px;}
 
 #footer{background-color:#ddd;margin:0 auto;padding:20px 25px 10px;border-top:1px solid #ccc;}
@@ -74,7 +75,25 @@ li{padding-bottom:5px;}
 #credits p{text-align:left;font-size:1.2em;margin:0;padding:0;line-height:1.4em;}
 #credits a{color:#aaa;font-weight:400;}
 
+.full{clear: left; float: left;width: 99%;}
 .left{float:left;width:49%;}
 .right{float:right;width:48%;}
 .clear{clear:both;visibility:hidden;}
 .small{font-size:0.8em;}
+
+img.floatLeft { 
+    margin-left: 4px; 
+    margin-bottom: 10px; 
+    margin-right: 4px; 
+    margin-top: 4px; 
+    float: left; 
+}
+
+hr {width: 100%;
+text-align: left;/*this will align it for IE*/
+margin: 0 auto 0 0; /*this will align it left for Mozilla*/
+height: 1px;
+}
+
+
+.box {margin:0 0 20px 0; padding:10px; border:1px solid #262311; background-color: #fcf3c1; color:#444; line-height:1.5em;}
