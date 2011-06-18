@@ -20,6 +20,7 @@
 			<li><a href="/index.html">Home</a></li>
 			<li><a href="/people.html">People</a></li>
 			<li><a class="current" href="/research.html">Research</a></li>
+			<li><a href="/research.html">Research</a></li>
 			<li><a href="/publications.html">Publications</a></li>
 			<li><a href="/software.html">Software</a></li>
 			<li><a href="/openings.html">Open Positions</a></li>
@@ -49,31 +50,31 @@
 
 		</div>
 
-		<div id="content">
-			<h2>Welcome</h2>
-			<p>The development of new strategies and methods to solve ordinary and partial differential equations and their application to problem in nonlinear wave propagation are central to our interests.</p>
+				<div id="content">
+			<h2>Research</h2>
+			<p>The development of new strategies and methods to solve ordinary and partial differential equations and their application to problem in nonlinear wave propagation are central to our interests. Our group is composed by people with backgrounds in mathematics, physics and mechanical engineering. For this reason we are active in an interdisciplinary intersection of different disciplines.</p>
+		
 			
 			
-			<h4>Research Projects</h4>
+			<h3>Main areas of research</h3>
 			<ul>
+			<div class="researchAreaTitle">
 				<li>Optimization of time integrators</li>
+			</div>
+			<p>The method of lines is a popular and effective approach to high order accurate solution of time-dependent PDEs. The time integration is typically achieved by use of multistage (e.g. Runge-Kutta) or linear multistep methods. Because of the large number of ODEs involved, this integration is expensive both in terms of computation and memory. For instance, these issues are critical when spatially high order accurate discretizations (e.g. spectral methods, WENO method, DG method, etc.) are used. One of our goal in this area is to develop stable methods that are computationally efficient and make efficient use of limited computer memory. In this area we focus on:</p>
 				<ul>
-					<li>Linearly stable</li>
-					<li>Strong Stability Preserving (SSP)</li>
-					<li>Positivity</li>
-				</ul>
-				<li>Nonlinearwaves in heterogeneous material</li>
-				<ul>
-					<li></li>
-					<li></li>
-				</ul>
-				<li>Numerical Software Development</li>
-				<ul>
-					<li>PetClaw</li>
-					<li>NodePy</li>
-					<li></li>
+					<li>Linearly stable schemes</li>
+					<li>Strong Stability Preserving (SSP) schemes</li>
+					<li>Positivity Preserving schemes</li>
 				</ul>
 				
+			<div class="researchAreaTitle">
+				<li>Nonlinearwaves in heterogeneous material</li>
+			</div>
+				<p>We investigate one- and two-dimensional materials with periodic structure, including sonic crystals and layered elastic media.  A variety of interesting phenomena may arise when waves pass through such structures, including band gaps, lensing, and solitary waves.</p>
+			
+				<li>Numerical Software Development</li>
+				<p>The wave propagation approach to hyperbolic PDEs has been pioneered by LeVeque and collaborators, and implemented in the Clawpack software. Our in this area includes development of the first high-order wave propagation algorithm that is based on wave propagation Riemann solvers, implemented in the SharpClaw software.  SharpClaw takes a method of lines approach, using WENO reconstruction and high order Runge-Kutta time integration.  More recently, we have developed PetClaw, a massively scalable parallel code based on Clawpack, SharpClaw, and PETSc. PetClaw is based on PyClaw, a Python front end for Clawpack and SharpClaw.</p>
 			</ul>
 			<hr />
 
