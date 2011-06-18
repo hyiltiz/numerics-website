@@ -1,0 +1,4 @@
+pyclaw/*
+sharpclaw/*
+nodepy/*
+.DS_Store
