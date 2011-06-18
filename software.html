@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Website of the Numerical Mathematics Group at KAUST" />
+	<meta name="keywords" content="numerical,mathematics,KAUST,Ketcheson" />
+	<meta name="author" content="David Ketcheson / Original design by andreasviklund.com" />
+	<link rel="stylesheet" type="text/css" href="variant-multi.css" title="Variant Multi" media="all" />
+	<title>KAUST Numerical Mathematics Group</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+		<h1><a href="index.html">The Numerical Mathematics Group</a></h1>
+		<h2>@KAUST</h2>
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a class="current" href="index.html">Home</a></li>
+			<li><a href="people.html">People</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="software.html">Software</a></li>
+			<li><a href="openings.html">Open Positions</a></li>
+		</ul>
+	</div>
+	
+
+	<div id="main">
+
+		<div id="content">
+			<h2>Software</h2>
+			<body>In order for new numerical algorithms to have impact, they must be implemented in software
+			that is both easy to use and powerful enough to solve interesting problems.  Computational science
+			software development is an integral part of our research.  Below you will find brief descriptions
+			of the major software packages developed within our group and with collaborators.</body><br><br>
+		</div><hr/>
+		<div id="content">
+			<h3><a href="pyclaw/index.html">PyClaw & PetClaw</a></h3>
+				<div class="button"><a href="pyclaw/index.html">Documentation</a></div>
+				<div class="button"><a href="http://github.com/clawpack/pyclaw">Code</a></div>
+				<br><br>
+				<body>PyClaw is a Python interface to the algorithms of Clawpack.  PetClaw is an extension of the PyClaw package yielding a massively parallel version of Clawpack, using PETSc, that is scalable to tens of thousands of processors.  PetClaw also provides access to the algorithms of SharpClaw (below) and is the recommended way to use them.  PyClaw was originally the work of Kyle Mandli.  PetClaw began life as the MS Thesis work of Amal Alghamdi and has become a powerful tool for studying hyperbolic PDEs.</body><br><br>				
+		</div><hr/>
+		
+		<div id="content">
+			<h3><a href="nodepy/index.html">NodePy</a></h3>
+				<div class="button"><a href="nodepy/index.html">Documentation</a></div>
+				<div class="button"><a href="http://bitbucket.org/ketch/nodepy">Code</a></div>
+				<br><br>
+				<body>NodePy (Numerical ODEs in Python) is a Python package for analyzing and testing numerical methods for initial value problems, such as Runge-Kutta and linear multistep methods.</body><br><br>				
+		</div><hr/>
+
+		<div id="content">
+			<h3><a href="sharpclaw/index.html">SharpClaw</a></h3>
+				<div class="button"><a href="sharpclaw/index.html">Documentation</a></div>
+				<div class="button"><a href="http://bitbucket.org/ketch/sharpclaw">Code</a></div>
+				<br><br>
+				<body>SharpClaw is a high-order accurate solver for general hyperbolic PDEs.  It uses the same kind of wave-propagation Riemann solvers as ClawPack, but is based on a method-of-lines approach.  It makes use of high order WENO reconstruction and Runge-Kutta methods to achieve high order accuracy.<br>
+
+    SharpClaw has recently been integrated into PyClaw/PetClaw along with very high order WENO reconstruction through PyWENO code generation.  Downloading PyClaw is the recommended way to get the SharpClaw algorithms, and will allow you to run in parallel as well.</body><br><br>				
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div><hr/>
+
+
+	<div id="credits">
+		<p>&copy; 2011 David Ketcheson and Matteo Parsani<br />
+		<span class="small">Site design based on a template from <a href="http://andreasviklund.com/">Andreas Viklund</a></span></p>
+	</div>  
+</div>
+</body>
+</html>

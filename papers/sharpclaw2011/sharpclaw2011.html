@@ -31,18 +31,18 @@
 
 		<div id="content">			
 			
-			<div class="button"><a href="petclaw2011.pdf">Download PDF</a></div>
-			<div class="button"><a href="hpc_reproducibility.tar">Download code</a></div>
+			<div class="button"><a href="sharpclaw.pdf">Download PDF</a></div>
+			<div class="button"><a href="https://bitbucket.org/ketch/sharpclaw/src/d71ab8721fb9">Download code</a></div>
 			<br><br>
 
-			<h4>PetClaw: A scalable parallel nonlinear wave propagation solver for Python</h4>
-			Amal Alghamdi, Aron Ahmadia, David I. Ketcheson, Matthew G. Knepley, Kyle T. Mandli, and Lisandro Dalcin; 
-			in <em>proceedings of the High Performance Computing Symposium 2011</em> (2011).
+			<h4>High-order wave propagation algorithms for general hyperbolic systems</h4>
+			David I. Ketcheson, Matteo Parsani, and Randall J. LeVeque,
+			submitted.
 			
 			<br>
 			
 			<div class="box"><strong>Abstract.</strong>
-			<body>We present PetClaw, a scalable distributed-memory solver for time-dependent nonlinear wave propagation. PetClaw unifies two well-known scientific computing packages, Clawpack and PETSc, using Python interfaces into both. We rely on Clawpack to provide the infrastructure and kernels for time-dependent nonlinear wave propagation. Similarly, we rely on PETSc to manage distributed data arrays and the communication between them.We describe both the implementation and performance of PetClaw as well as our challenges and accomplishments in scaling a Python-based code to tens of thousands of cores on the BlueGene/P architecture. The capabilities of PetClaw are demonstrated through application to a novel problem involving elastic waves in a heterogeneous medium. Very finely resolved simulations are used to demonstrate the suppression of shock formation in this system.</body>
+			<body>We present a finite volume method that is applicable to general hyperbolic PDEs, including non-conservative and spatially varying systems. The method can be extended to arbitrarily high order of accuracy and allows a well-balanced implementation for capturing solutions of balance laws near steady state. This well-balancing is achieved through the f-wave Riemann solver and a novel wave-slope WENO reconstruction procedure. The spatial discretization, like that of the well-known Clawpack software, is based on solving Riemann problems and calculating fluctuations (not fluxes). Our implementation employs weighted essentially non-oscillatory reconstruction in space and strong stability preserving Runge-Kutta integration in time. We demonstrate the wide applicability and advantageous properties of the method through numerical examples, including problems in non-conservative form, problems with spatially varying fluxes, and problems involving near-equilibrium solutions of balance laws.</body>
 			</div>
 
 			<div class="clear">&nbsp;</div>
