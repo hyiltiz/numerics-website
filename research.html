@@ -28,63 +28,41 @@
 	
 
 	<div id="main">
-		<div id="sidebar">
-			<div class="sidebarbox">
-               <h2>Quick Links</h2>
-				<ul class="sidemenu">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="software.html">Software</a></li>
-					<ul>
-					<li><a href="http://web.kaust.edu.sa/faculty/davidketcheson/pyclaw/">PyClaw and PetClaw</a></li>
-					<li><a href="http://web.kaust.edu.sa/faculty/davidketcheson/nodepy/">NodePy</a></li>
-					</ul>
-					<li><a href="http://www.kaust.edu.sa">KAUST</a>
-						<ul>
-							<li><a href="aboutkaust.html">About KAUST</a></li>
-							<li><a href="http://mcse.kaust.edu.sa/">Mathematical and Computer Science and Engineering Division</a></li>
-							<li><a href="http://www.kaust.edu.sa/academics/programs/applied.html">Applied Mathematics and Computational Science Degree Program</a></li>
-						</ul></li>
-				</ul>
-			</div>
-
-		</div>
-
-				<div id="content">
+		<div id="content">
 			<h2>Research</h2>
-			<p>The development of new strategies and methods to solve ordinary and partial differential equations and their application to problem in nonlinear wave propagation are central to our interests. Our group is composed by people with backgrounds in mathematics, physics and mechanical engineering. For this reason we are active in an interdisciplinary intersection of different reaserch streams.</p>
+			<p>The development of new strategies and methods to solve ordinary and partial differential equations and their application to wave propagation problems are central to our interests. Our group is includes researchers with backgrounds in mathematics, physics and mechanical engineering, and partners with other groups in application areas including photonics, seismics, and combustion.  Thus our research spans a range of disciplines, while remaining rooted in applied mathematics.  A few of our current and recent research thrusts are highlighted below.</p>
 		
 			
 			
-			<h3>Main areas of research</h3>
-			<ul>
-			<div class="researchAreaTitle">
-				<li>Optimization of time integrators</li>
-			</div>
-			<p>The method of lines is a popular and effective approach to high order accurate solution of time-dependent PDEs. The time integration is typically achieved by use of multistage (e.g. Runge-Kutta) or linear multistep methods. Because of the large number of ODEs involved, this integration is expensive both in terms of computation and memory. These issues are critical when high order accurate discretizations (e.g. spectral methods, WENO method, DG method, etc.) are used for the discretization of the spatial derivatives. In fact, with spatially high order methods, the systems of ODEs
-are generally stiff, and the stiffness increases with the order of the method. Our goal in this area is to develop stable methods that are computationally efficient and make efficient use of limited computer memory. In this area we focus on explicit:</p>
+			<h3>Optimization of time integrators</h3>
+			<p>The method of lines is a popular and effective approach to high order accurate solution of time-dependent PDEs. The time integration is typically achieved by use of multistage (e.g. Runge-Kutta) or linear multistep methods. Because of the large number of ODEs involved, this integration is expensive both in terms of computation and memory. These issues are critical when high order accurate discretizations (e.g. spectral methods, WENO method, DG method, etc.) are used for the discretization of the spatial derivatives. Our goal in this area is to develop stable methods that are computationally efficient and make efficient use of limited computer memory, by developing schemes that are optimized for</p>
 				<ul>
-					<li>Linearly stable schemes</li>
-					<li>Strong Stability Preserving (SSP) schemes</li>
-					<li>Positivity Preserving schemes</li>
+					<li>linear stability</li>
+					<li>strong stability preservation (or positivity preservation)</li>
+					<li>accuracy</li>
+					<li>minimal storage requirements</li>
 				</ul>
-			<p>Matrix-free explicit methods are high-order of accuracy in time, simplicity in implementation, and low       
-computational cost per time step. However, they are subjected to severe Courant-Friedrichs-Lewy (CFL) stability limitations. Indeed, in many practical applications, where the resolution of all temporal scales is not required, the maximum allowable time step is determined by some stability requirements and it is smaller than the time step required for accuracy considerations. In addition, the CFL stability for spatially high order discretizations is significantly lower than the CFL stability of equivalent-order finite volume or finite difference high-order methods. As a result, the computational effort of explicit methods for solutions of problems that require high order accurate discretizations is so high that the overall numerical scheme often becomes inefficient.<br><br>
-
-Implicit time integration schemes can be used to deal with these problems. These schemes can advance the solution with significantly larger time steps compared to explicit methods. In particular, we focus on a new class of implicit SSP Runge-Kutta schemes, recently presented in <a href="papers/dwrk2011/downwind_ssp.html">Step sizes for strong stability preservation with downwind-biased operators</a>, and the development of an efficient nonlinear algebraic solver with preconditioning for such schemes. In fact, implicit temporal discretizations imply the solution of non-linear algebraic systems. If the algorithm for such systems is not efficient then the schemes may be more expensive than explicit ones.</p> 
+			<p>Matrix-free explicit methods can be high-order accurate, simple to implement, and inexpensive in terms of computational cost per time step. However, they are subject to stringent CFL stability limitations.  		Even for wave applications, if the resolution of all temporal scales is not required, or if the mesh is highly non-uniform or anisotropic, the CFL condition may be overly restrictive.  Furthermore, spatially high order methods lead to systems of ODEs that become stiffer as the order of the method increases.
+These considerations suggest that implicit time integration schemes may be advantageous in such applications.   However, for nonlinear wave applications, high order accurate methods typically lead to oscillatory solutions when used with large time steps.  We are developing <a href="/papers/dwrk2011/downwind_ssp.html">a new class of implicit SSP Runge-Kutta schemes</a> that offer the potential to overcome this difficulty.</p> 
 
 
 				
-			<div class="researchAreaTitle">
-				<li>Nonlinearwaves in heterogeneous material</li>
-			</div>
-				<p>We investigate one- and two-dimensional materials with periodic structure, including sonic crystals and layered elastic media. A variety of interesting phenomena may arise when waves pass through such structures, including band gaps, lensing, and solitary waves. In this research area we explore the behaviors of nonlinear waves in periodic and random materials and shallow water waves over variable bathymetry. Our research include numerical simulations, homogenization theory and the development of new theory that can describe and predict accurately the suppression of shock formation.</p>
+			<h3>Nonlinear waves in heterogeneous materials</h3>
+				<p>Solutions of systems of nonlinear first-order hyperbolic PDEs with uniform coefficients are relatively
+				well understood; in particular, their long-term behavior is characterized by shock formation
+				and entropy decay.  Solutions of hyperbolic systems with spatially varying coefficients
+				exhibit qualitatively different behavior, including 
+				<a href="/papers/quezada-thesis/quezada-thesis.html">solitary wave formation</a> and 
+				<a href='http://arxiv.org/abs/1105.2892'>shock suppression</a>.
+				We are studying these behaviors for elastic, electromagnetic, and shallow water waves
+				in structured and random media.  We are developing new understanding of these behaviors
+				based on numerical simulations and homogenization theory.</p>
 			
-				<li>Numerical Software Development</li>
-				<p>In our group we also develop softwares for high performance parallel solution of hyperbolic PDEs (PetClaw), analysis of time integrators (NodePy) and spatial discretization (NodePy and other softwares that for the moment are restricted to our goup).
-				<ul>
-					<li>PetClaw: in collaboration we other researchers and collaborator we have developed a massively parallel version of Clawpack, using PETSc and PyClaw, scalable to tens of thousands of processors.  PetClaw also provides access to the first algorithm that implements a high-order wave propagation algorithm based on wave propagation Riemann solvers, i.e. SharpClaw. SharpClaw takes a method of lines approach, using WENO reconstruction and high order Runge-Kutta time integration.</li>
-					<li>NodePy(Numerical ODEs in Python): it is a Python package for analyzing and testing numerical methods for the initial value problem, such as Runge-Kutta and linear multistep methods. NodePy represents an object-oriented approach, in which the basic object is a numerical ODE solver. Recently, we have started to implement in NodePy a set of classical and novel spatial discretizations which soon will allow us to design and study new time integrators for a given spatial discretization. </li>
-				</ul> 
+				<h3>Numerical Software Development</h3>
+				<p>In order for new numerical algorithms to have impact, they must be implemented in software
+			that is both easy to use and powerful enough to solve interesting problems.  Computational science
+			software development is an integral part of our research.  For more information, see our
+			<a href="/software.html">software page</a>.
 				
 								
 			</ul>
