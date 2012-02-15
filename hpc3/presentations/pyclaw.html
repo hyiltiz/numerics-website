@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta name="description" content="PyClaw Accessible, Extensible, Scalable Tools for Wave Propagation David I. Ketcheson Kyle T. Mandli KAUST University of Texas Questions for the Day What are we interested in? What is this PyClaw package anyway? How well does it work? What can I do with it? Background What are we interested in? Wave Phenomena Storm Surges Lahars Courtesy of Franck Lavigne Acoustic Waves Pyroclastic Flows/Surges   Physics  Numerics  Mathematics Waves Hyperbolic PDEs When is a PDE hyperbolic? Information propagates at a finite speed   Physics  Numerics  Mathematics Waves Hyperbolic PDEs Finite Volumes or Finite Differences or ... Finite Volume Methods Finite Volume Methods             Riemann Problems    Conservation Laws Package: General hyperbolic PDEs in 1/2/3 dimensions Developed by Randy LeVeque, Marsh Berger, and various others over the past 15 years in Fortran 77 Dozens of “Riemann solvers” by numerous additional contributors Includes adaptive mesh refinement (AMRClaw) Textbook and many examples available www.clawpack.org Clawpack 4.x  Clawpack AMRClaw GeoClaw   SharpClaw  BEARClaw AstroBear   ChomboClaw  MPIClaw  ZPLClaw  SphereClaw  ClawMan   CUDAClaw  Legacy Code No dynamic memory allocation No classes or derived data types Duplicated code General agreement among developers that a refactor is worthwhile Laden Swallows Easily switch methods Maintainable Extendable Interactive The Zen of PyClaw What is this PyClaw package anyway? PyClaw Access to Clawpack Fortran kernels from python Pure python version of Clawpack Parameter studies and numerical experiments Literate programming and reproducible research Python-based plotting capability High-level language interface to Clawpack Features: Access to multiple structured-grid solvers (Clawpack, SharpClaw) Scalable parallelization built on PETSc Very high order schemes using PyWENO code generation Ability to reuse existing problem-specific Fortran routines or add functionality in python PyClaw Parallelism Transparent to the User    Opaque to the Developer ~500 lines of Python    Clawpack 5.0  VisClaw  Riemann ...    PyClaw Architecture The Flow  PyClaw Solution   PyClaw Geometry Domain Performance How well does it work? Single Core Performance Clawpack PyClaw Acoustics Shallow Water Acoustics Shallow Water Intel Xeon PowerPC 450 Can a Python-based code be fast? Shaheen IBM’s 16-Rack Blue Gene/P, ~65k computing cores, 222 teraflops/sec 1.9 petabyte storage capacity Expandable to petascale computing Supported by 10 supercomputing experts hired by IBM Open to all on campus researchers and off-campus collaborators Parallel performance Local Computations Local to Global Global to Local Parallel Initialization CFL Reduce 1 16 256 4096 65536 2D radially-symmetric Euler equations Can a Python-based code scale? Strong scaling Efficiency 16 64 256 1024 4096 16384 Per-core grid size Two Caveats Currently, two parts of the code don’t scale on Shaheen: Writing files Dynamic loading of shared libraries in Python Aron Ahmadia and Jed Brown are working on a solution for dynamic loading Applications What can I do with it? Fluid dynamics: shock-bubble interaction Computing on surfaces Shallow Water on the Sphere Day 0 Shallow Water on the Sphere Day 38 Shallow Water on the Sphere Day 45 Shallow Water on the Sphere Day 48 Asymptotic behavior of nonlinear waves “...in the long run all the structure of the initial data completely disappears...this same N-wave shape will always arise...” What about heterogeneous materials? Asymptotic behavior of nonlinear waves in heterogeneous media Instead of shocks, we see oscillatory wave trains (LeVeque &amp; Yong, 2003) Asymptotic behavior of nonlinear waves in heterogeneous media Instead of shocks, we see oscillatory wave trains (LeVeque &amp; Yong, 2003) Simulation of nonlinear waves in periodic media ~100 cells per material layer ~200+ material layers In 2D: ~109 unkowns In 3D: ~1014 unkowns Cylindrical wave fronts Cylindrical wave fronts Cylindrical wave fronts Radial solitary waves Movie here Cylindrical Solitary Waves Cylindrical solitary waves Acknowledgments At KAUST: Amal Alghamdi  Aron Ahmadia Matteo Parsani  Manuel Quezada  Clawpack developers! Matthew Emmett (UNC-Chapel Hill) Matt Knepley (U. Chicago) Jed Brown (Argonne) Lisandro Dalcin (CIMEC) What’s next? Adaptive mesh refinement Discontinuous Galerkin methods Geophysics Implicit methods Many-core implementations Visualization &amp; Steering WENO methods"/>
+    <title></title>
+    <script type="text/javascript" language="javascript">
+//      <![CDATA[
+            var images = new Array (107);
+            images[0] = "pyclaw.html_files/pyclaw.001-001.png";
+            images[1] = "pyclaw.html_files/pyclaw.002-001.png";
+            images[2] = "pyclaw.html_files/pyclaw.002-002.png";
+            images[3] = "pyclaw.html_files/pyclaw.002-003.png";
+            images[4] = "pyclaw.html_files/pyclaw.002-004.png";
+            images[5] = "pyclaw.html_files/pyclaw.002-005.png";
+            images[6] = "pyclaw.html_files/pyclaw.003-001.png";
+            images[7] = "pyclaw.html_files/pyclaw.004-001.png";
+            images[8] = "pyclaw.html_files/pyclaw.004-002.png";
+            images[9] = "pyclaw.html_files/pyclaw.004-003.png";
+            images[10] = "pyclaw.html_files/pyclaw.005-001.png";
+            images[11] = "pyclaw.html_files/pyclaw.006-001.png";
+            images[12] = "pyclaw.html_files/pyclaw.007-001.png";
+            images[13] = "pyclaw.html_files/pyclaw.008-001.png";
+            images[14] = "pyclaw.html_files/pyclaw.009-001.png";
+            images[15] = "pyclaw.html_files/pyclaw.009-002.png";
+            images[16] = "pyclaw.html_files/pyclaw.009-003.png";
+            images[17] = "pyclaw.html_files/pyclaw.010-001.png";
+            images[18] = "pyclaw.html_files/pyclaw.010-002.png";
+            images[19] = "pyclaw.html_files/pyclaw.010-003.png";
+            images[20] = "pyclaw.html_files/pyclaw.010-004.png";
+            images[21] = "pyclaw.html_files/pyclaw.010-005.png";
+            images[22] = "pyclaw.html_files/pyclaw.010-006.png";
+            images[23] = "pyclaw.html_files/pyclaw.010-007.png";
+            images[24] = "pyclaw.html_files/pyclaw.010-008.png";
+            images[25] = "pyclaw.html_files/pyclaw.011-001.png";
+            images[26] = "pyclaw.html_files/pyclaw.011-002.png";
+            images[27] = "pyclaw.html_files/pyclaw.011-003.png";
+            images[28] = "pyclaw.html_files/pyclaw.011-004.png";
+            images[29] = "pyclaw.html_files/pyclaw.011-005.png";
+            images[30] = "pyclaw.html_files/pyclaw.011-006.png";
+            images[31] = "pyclaw.html_files/pyclaw.011-007.png";
+            images[32] = "pyclaw.html_files/pyclaw.012-001.png";
+            images[33] = "pyclaw.html_files/pyclaw.012-002.png";
+            images[34] = "pyclaw.html_files/pyclaw.012-003.png";
+            images[35] = "pyclaw.html_files/pyclaw.012-004.png";
+            images[36] = "pyclaw.html_files/pyclaw.013-001.png";
+            images[37] = "pyclaw.html_files/pyclaw.013-002.png";
+            images[38] = "pyclaw.html_files/pyclaw.013-003.png";
+            images[39] = "pyclaw.html_files/pyclaw.013-004.png";
+            images[40] = "pyclaw.html_files/pyclaw.014-001.png";
+            images[41] = "pyclaw.html_files/pyclaw.014-002.png";
+            images[42] = "pyclaw.html_files/pyclaw.015-001.png";
+            images[43] = "pyclaw.html_files/pyclaw.016-001.png";
+            images[44] = "pyclaw.html_files/pyclaw.017-001.png";
+            images[45] = "pyclaw.html_files/pyclaw.017-002.png";
+            images[46] = "pyclaw.html_files/pyclaw.017-003.png";
+            images[47] = "pyclaw.html_files/pyclaw.018-001.png";
+            images[48] = "pyclaw.html_files/pyclaw.019-001.png";
+            images[49] = "pyclaw.html_files/pyclaw.019-002.png";
+            images[50] = "pyclaw.html_files/pyclaw.019-003.png";
+            images[51] = "pyclaw.html_files/pyclaw.020-001.png";
+            images[52] = "pyclaw.html_files/pyclaw.021-001.png";
+            images[53] = "pyclaw.html_files/pyclaw.022-001.png";
+            images[54] = "pyclaw.html_files/pyclaw.022-002.png";
+            images[55] = "pyclaw.html_files/pyclaw.023-001.png";
+            images[56] = "pyclaw.html_files/pyclaw.023-002.png";
+            images[57] = "pyclaw.html_files/pyclaw.024-001.png";
+            images[58] = "pyclaw.html_files/pyclaw.025-001.png";
+            images[59] = "pyclaw.html_files/pyclaw.025-002.png";
+            images[60] = "pyclaw.html_files/pyclaw.025-003.png";
+            images[61] = "pyclaw.html_files/pyclaw.026-001.png";
+            images[62] = "pyclaw.html_files/pyclaw.026-002.png";
+            images[63] = "pyclaw.html_files/pyclaw.026-003.png";
+            images[64] = "pyclaw.html_files/pyclaw.027-001.png";
+            images[65] = "pyclaw.html_files/pyclaw.027-002.png";
+            images[66] = "pyclaw.html_files/pyclaw.027-003.png";
+            images[67] = "pyclaw.html_files/pyclaw.027-004.png";
+            images[68] = "pyclaw.html_files/pyclaw.027-005.png";
+            images[69] = "pyclaw.html_files/pyclaw.028-001.png";
+            images[70] = "pyclaw.html_files/pyclaw.029-001.png";
+            images[71] = "pyclaw.html_files/pyclaw.030-001.png";
+            images[72] = "pyclaw.html_files/pyclaw.030-002.png";
+            images[73] = "pyclaw.html_files/pyclaw.031-001.png";
+            images[74] = "pyclaw.html_files/pyclaw.032-001.png";
+            images[75] = "pyclaw.html_files/pyclaw.032-002.png";
+            images[76] = "pyclaw.html_files/pyclaw.033-001.png";
+            images[77] = "pyclaw.html_files/pyclaw.034-001.png";
+            images[78] = "pyclaw.html_files/pyclaw.035-001.png";
+            images[79] = "pyclaw.html_files/pyclaw.036-001.png";
+            images[80] = "pyclaw.html_files/pyclaw.037-001.png";
+            images[81] = "pyclaw.html_files/pyclaw.038-001.png";
+            images[82] = "pyclaw.html_files/pyclaw.039-001.png";
+            images[83] = "pyclaw.html_files/pyclaw.040-001.png";
+            images[84] = "pyclaw.html_files/pyclaw.041-001.png";
+            images[85] = "pyclaw.html_files/pyclaw.041-002.png";
+            images[86] = "pyclaw.html_files/pyclaw.041-003.png";
+            images[87] = "pyclaw.html_files/pyclaw.041-004.png";
+            images[88] = "pyclaw.html_files/pyclaw.042-001.png";
+            images[89] = "pyclaw.html_files/pyclaw.043-001.png";
+            images[90] = "pyclaw.html_files/pyclaw.043-002.png";
+            images[91] = "pyclaw.html_files/pyclaw.043-003.png";
+            images[92] = "pyclaw.html_files/pyclaw.043-004.png";
+            images[93] = "pyclaw.html_files/pyclaw.044-001.png";
+            images[94] = "pyclaw.html_files/pyclaw.045-001.png";
+            images[95] = "pyclaw.html_files/pyclaw.045-002.png";
+            images[96] = "pyclaw.html_files/pyclaw.045-003.png";
+            images[97] = "pyclaw.html_files/pyclaw.045-004.png";
+            images[98] = "pyclaw.html_files/pyclaw.045-005.png";
+            images[99] = "pyclaw.html_files/pyclaw.046-001.png";
+            images[100] = "pyclaw.html_files/pyclaw.047-001.png";
+            images[101] = "pyclaw.html_files/pyclaw.048-001.png";
+            images[102] = "pyclaw.html_files/pyclaw.049-001.png";
+            images[103] = "pyclaw.html_files/pyclaw.050-001.png";
+            images[104] = "pyclaw.html_files/pyclaw.051-001.png";
+            images[105] = "pyclaw.html_files/pyclaw.052-001.png";
+            images[106] = "pyclaw.html_files/pyclaw.053-001.png";
+            var index = 0;
+            function WindowLoaded(evt)
+            {
+                document.body.onselectstart = function () { return false; };
+            }
+            function Step(i)
+            {
+                GoTo(index + i)
+            }
+            function GoTo(newIndex)
+            {
+                if(newIndex >= 0 && newIndex < images.length)
+                {
+                    index = newIndex;
+                    document.Slideshow.src = images[index];
+                }
+            }
+//      ]]>
+    </script>
+</head>
+<body bgcolor="black" onload='WindowLoaded(event);'>
+    <p align="center">
+        <br/>
+        <br/>
+        <img name="Slideshow" alt="" src="pyclaw.html_files/pyclaw.001-001.png" onclick="Step(1)"/>
+        <br/>
+        <br/>
+        <input type="image" src="pyclaw.html_files/home.png" onclick="GoTo(0)"/>
+        &nbsp;&nbsp;&nbsp;
+        <input type="image" src="pyclaw.html_files/prev.png" onclick="Step(-1)"/>
+        <input type="image" src="pyclaw.html_files/next.png" onclick="Step(1)"/>
+    </p>
+</body>
+</html>
