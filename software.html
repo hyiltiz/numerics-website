@@ -57,7 +57,8 @@
 				<li><a href="http://www.clawpack.org">Clawpack</a>: High resolution methods for hyperbolic PDEs (in Fortran)</li>
 				<li><a href="http://www.github.com/clawpack/visclaw">VisClaw</a>: Visualization tools for Clawpack, PyClaw, and PetClaw</li>
 				<li><a href="http://www.github.com/clawpack/riemann">Riemann</a>: A library of wave propagation Riemann solvers</li>
-				<li><a href="http://andy.terrel.us/ignition/">Ignition</a>: Automatic generation of Riemann solvers (experimental)</li>
+				<li><a href="http://andy.terrel.us/ignition/">PyWENO</a>: Automatic generation of WENO kernels</li>
+				<li><a href="https://github.com/memmett/PyWENO">Ignition</a>: Automatic generation of Riemann solvers (experimental)</li>
 				</ul>
 				</p><br><br>				
 		</div><hr/>
@@ -72,9 +73,9 @@ The package contains implementations of many things of general use for numerical
 					<ul>
 						<li>Methods for generating Runge-Kutta and linear multistep methods, including numerous individual methods and families.</li>
 						<li>Methods for studying well-known and some less-common properties of methods, including strong stability preservation, contractivity, order stars, etc.</li>
-						<li>Rooted trees and order conditions: the package contains a full imple- mentation of the Butcher group, including methods for plotting and computing products on rooted trees, as well as elementary weights and functions for generating and checking order conditions.</li>
-						<li>Numerous additional classes of methods, including low-storage Runge- Kutta methods, multistep Runge-Kutta methods, embedded Runge- Kutta pairs, and more.</li>
-						<li>The DETEST suite of initial value test problems, as well as a vari- ety of other problems and methods for automatically comparing the performance of any set of numerical methods in the solution of these problems.</li>
+						<li>Rooted trees and order conditions: the package contains a full implementation of the Butcher group, including methods for plotting and computing products on rooted trees, as well as elementary weights and functions for generating and checking order conditions.</li>
+						<li>Numerous additional classes of methods, including low-storage Runge-Kutta methods, multistep Runge-Kutta methods, embedded Runge-Kutta pairs, and more.</li>
+						<li>The DETEST suite of initial value test problems, as well as a variety of other problems and methods for automatically comparing the performance of any set of numerical methods in the solution of these problems.</li>
 					</ul>
 </body><br><br>				
 		</div><hr/>
@@ -86,7 +87,7 @@ The package contains implementations of many things of general use for numerical
 				<br><br>
 				<body>SharpClaw is a high-order accurate solver for general hyperbolic PDEs.  It uses the same kind of wave-propagation Riemann solvers as ClawPack, but is based on a method-of-lines approach.  It makes use of high order WENO reconstruction and Runge-Kutta methods to achieve high order accuracy.<br>
 
-    SharpClaw has recently been integrated into PyClaw/PetClaw along with very high order WENO reconstruction through PyWENO code generation.  Downloading PyClaw is the recommended way to get the SharpClaw algorithms, and will allow you to run in parallel as well.</body><br><br>				
+    SharpClaw has recently been integrated into PyClaw/PetClaw along with very high order WENO reconstruction through PyWENO code generation.  The pure Fortran SharpClaw code is no longer supported.  <strong>Downloading PyClaw (see above) is the recommended way to get the SharpClaw algorithms, and will allow you to run in parallel as well.</strong></body><br><br>				
 		</div>
 		<div class="clear">&nbsp;</div>
 	</div><hr/>
