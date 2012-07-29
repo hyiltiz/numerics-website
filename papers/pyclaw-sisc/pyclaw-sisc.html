@@ -31,16 +31,18 @@
 
 		<div id="content">			
 			
-			<a class="button black" href="http://arxiv.org/abs/1105.5798">Download PDF</a>
-			<a class="button black" href="dwrk_paper_scripts.zip">Download code</a>
+			<a href="http://arxiv.org/abs/1111.6583" class="button black">Download PDF</a>
+			<a href="https://bitbucket.org/ahmadia/pyclaw-sisc-rr" class="button black">Download code</a>
 			<br><br>
 
-			<h4>Step sizes for strong stability preservation with downwind-biased operators</h4>
-			David I. Ketcheson, <em>SIAM Journal on Numerical Analysis</em>, 49(4):1649-1660 (2011).
+			<h4>PyClaw: Accessible, Extensible, Scalable Tools for Wave Propagation Problems</h4>
+			David I. Ketcheson, Kyle T Mandli, Aron Ahmadia, Amal Alghamdi, Manuel Quezada, Matteo Parsani, Matthew G. Knepley, and Matthew Emmett,
+			<em>SIAM Journal on Scientific Computing In press.</em>  (2012)
+			
 			<br>
 			
 			<div class="box"><strong>Abstract.</strong>
-			<body>Strong stability preserving (SSP) integrators for initial value ODEs preserve temporal monotonicity solution properties in arbitrary norms. All existing SSP methods, including implicit methods, either require small step sizes or achieve only first order accuracy. It is possible to achieve more relaxed step size restrictions in the discretization of hyperbolic PDEs through the use of both upwind- and downwind-biased semi-discretizations. We investigate bounds on the maximum SSP step size for methods that include negative coefficients and downwind-biased semi-discretizations. We prove that the downwind SSP coefficient for linear multistep methods of order greater than one is at most equal to two, while the downwind SSP coefficient for explicit Runge–Kutta methods is at most equal to the number of stages of the method. In contrast, the maximal downwind SSP coefficient for second order Runge–Kutta methods is shown to be unbounded. We present a class of such methods with arbitrarily large SSP coefficient and demonstrate that they achieve second order accuracy for large CFL number.</body>
+			<body>Development of scientific software involves tradeoffs between ease of use, generality, and performance. We describe the design of a general hyperbolic PDE solver that can be operated with the convenience of MATLAB yet achieves efficiency near that of hand-coded Fortran and scales to the largest supercomputers. This is achieved by using Python for most of the code while employing automatically-wrapped Fortran kernels for computationally intensive routines, and using Python bindings to interface with a parallel computing library and other numerical packages. The software described here is PyClaw, a Python-based structured grid solver for general systems of hyperbolic PDEs \cite{pyclaw}. PyClaw provides a powerful and intuitive interface to the algorithms of the existing Fortran codes Clawpack and SharpClaw, simplifying code development and use while providing massive parallelism and scalable solvers via the PETSc library. The package is further augmented by use of PyWENO for generation of efficient high-order weighted essentially non-oscillatory reconstruction code. The simplicity, capability, and performance of this approach are demonstrated through application to example problems in shallow water flow, compressible flow and elasticity.</body>
 			</div>
 
 			<div class="clear">&nbsp;</div>
