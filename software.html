@@ -33,6 +33,7 @@
                <h2>Packages</h2>
 				<ul class="sidemenu">
 					<li><a href="#petclaw">PyClaw</a></li>
+					<li><a href="#rkopt">RK-opt</a>
 					<li><a href="#nodepy">NodePy</a>
 					<li><a href="#sharpclaw">SharpClaw</a></li>
 				</ul>
@@ -41,10 +42,16 @@
 		</div>
 		<div id="content">
 			<h2>Software</h2>
-			<body>In order for new numerical algorithms to have impact, they must be implemented in software
-			that is both easy to use and powerful enough to solve interesting problems.  Computational science
-			software development is an integral part of our research.  Below you will find brief descriptions
-			of the major software packages developed within our group and with collaborators.</body><br><br>
+			<body>Software development is an integral part of our research.  
+			In order for new numerical algorithms to have impact, they must be implemented in software
+			that is both easy to use and powerful enough to solve interesting problems.
+			We believe in the principles of <strong>reproducibility</strong> and <strong>open science</strong>,
+			including the principles of the <a href="http://sciencecodemanifesto.org">Science Code Manifesto</a>.  All codes used in
+			our papers are released (under modified BSD license) and we encourage others to use them.<br>
+			
+            Below you will find brief descriptions of and links to the major software packages developed 
+            within our group and with collaborators.  Smaller scripts used for a specific paper can be found
+            in links on our <a href="publications.html">publcations page</a>.</body><br><br>
 		</div><hr/>
 		<div id="content">
 			<h3><a name="petclaw">PyClaw</a></h3>
@@ -52,7 +59,7 @@
 				<a class="button black" href="http://github.com/clawpack/pyclaw">Code</a>
 				<br><br>
 				<body>PyClaw is a Python interface to the algorithms of Clawpack.  PetClaw is an extension of the PyClaw package yielding a massively parallel version of Clawpack, using PETSc, that is scalable to tens of thousands of processors.  PetClaw also provides access to the algorithms of SharpClaw (below) and is the recommended way to use them.  PyClaw was originally the work of Kyle Mandli.  PetClaw began life as the MS Thesis work of Amal Alghamdi and has become a powerful tool for studying hyperbolic PDEs.</body>
-				<p><strong>Related packages</strong>s:
+				<p><strong>Related packages</strong>:
 				<ul>
 				<li><a href="http://www.clawpack.org">Clawpack</a>: High resolution methods for hyperbolic PDEs (in Fortran)</li>
 				<li><a href="http://www.github.com/clawpack/visclaw">VisClaw</a>: Visualization tools for Clawpack, PyClaw, and PetClaw</li>
@@ -63,6 +70,25 @@
 				</p><br><br>				
 		</div><hr/>
 		
+		<div id="content">
+			<h3><a name="rkopt">RK-opt</a></h3>
+				<a class="button black" href="RK-opt/index.html">Documentation</a>
+				<a class="button black" href="http://github.com/ketch/RK-opt">Code</a>
+				<br><br>
+				<body>RK-opt is a collection of tools for optimizing and understanding Runge-Kutta and multistep Runge-Kutta methods and their stability functions.  It is written primarily in MATLAB and makes use of the Optimization Toolbox and Global Optimization Toolbox, as well as CVX.  RK-opt contains routines for finding
+				<ul>
+				<li>polynomials with optimal radius of absolute moonotonicity</li>
+				<li>polynomials with optimal stable step size for prescribed complex spectra</li>
+				<li>Runge-Kutta, low-storage Runge-Kutta, and multistep Runge-Kutta methods with
+				    <ul>
+				    <li>optimal radius of absolute monotonicity</li>
+				    <li>minimal leading truncation error coefficients</li>
+				    <li>prescribed stability polynomial coefficients</li>
+				    </ul></li>
+				</ul>
+</body><br><br>				
+		</div><hr/>
+
 		<div id="content">
 			<h3><a name="nodepy">NodePy</a></h3>
 				<a class="button black" href="nodepy/index.html">Documentation</a>
@@ -81,7 +107,7 @@ The package contains implementations of many things of general use for numerical
 		</div><hr/>
 
 		<div id="content">
-			<h3><a name="sharpclaw">SharpClaw</a></h3>
+			<h3><a name="sharpclaw">SharpClaw (deprecated)</a></h3>
 				<a class="button black" href="sharpclaw/index.html">Documentation</a>
 				<a class="button black" href="http://bitbucket.org/ketch/sharpclaw">Code</a>
 				<br><br>

@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Website of the Numerical Mathematics Group at KAUST" />
+	<meta name="keywords" content="numerical,mathematics,KAUST,Ketcheson" />
+	<meta name="author" content="David Ketcheson / Original design by andreasviklund.com" />
+	<link rel="stylesheet" type="text/css" href="/variant-multi.css" title="Variant Multi" media="all" />
+	<title>KAUST Numerical Mathematics Group: Publications</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+		<h1><a href="/index.html">The Numerical Mathematics Group</a></h1>
+		<h2>@KAUST</h2>
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/people.html">People</a></li>
+			<li><a class="current" href="/publications.html">Publications</a></li>
+			<li><a href="/software.html">Software</a></li>
+			<li><a href="/openings.html">Open Positions</a></li>
+		</ul>
+	</div>
+	
+
+	<div id="main">
+
+
+		<div id="content">			
+			
+			<a class="button black" href="msthesis-alghamdi.pdf">Download PDF</a>
+			<a class="button black" href="https://bitbucket.org/amal/alghamdi_thesis_experiment">Reproducibility (code)</a>
+			<br><br>
+
+			<h4>PetClaw: Parallelization and Performance Optimization of a Python-Based Nonlinear Wave Propagation Solver Using PETSc</h4>
+			Amal Alghamdi<br>
+			MS Thesis<br>
+			KAUST (2012)
+			
+			<br>
+			
+			<div class="box"><strong>Abstract.</strong>
+			<body>Clawpack, a conservation laws package implemented in Fortran, and its Python- based version, PyClaw, are existing tools providing nonlinear wave propagation solvers that use state of the art finite volume methods. Simulations using those tools can have extensive computational requirements to provide accurate results. Therefore, A number of tools, such as BearClaw and MPIClaw, have been developed based on Clawpack to achieve significant speedup by exploiting parallel architectures. How- ever, none of them has been shown to scale on a large number of cores. Furthermore, these tools, implemented in Fortran, achieve parallelization by inserting parallelization logic and MPI standard routines throughout the serial code in a non modular manner.
+Our contribution in this thesis research is three-fold. First, we demonstrate an advantageous use case of Python in implementing easy-to-use modular extensible scalable scientific software tools by developing an implementation of a parallelization framework, PetClaw, for PyClaw using the well-known Portable Extensible Toolkit
+4
+for Scientific Computation, PETSc, through its Python wrapper petsc4py. Second, we demonstrate the possibility of getting acceptable Python code performance when compared to Fortran performance after introducing a number of serial optimizations to the Python code including integrating Clawpack Fortran kernels into PyClaw for low-level computationally intensive parts of the code. As a result of those optimizations, the Python overhead in PetClaw for a shallow water application is only 12 percent when compared to the corresponding Fortran Clawpack application. Third, we provide a demonstration of PetClaw scalability on up to the entirety of Shaheen; a 16-rack Blue Gene/P IBM supercomputer that comprises 65,536 cores and located at King Abdullah University of Science and Technology (KAUST). The PetClaw solver achieved above 0.98 weak scaling efficiency for an Euler application on the whole machine excluding the initialization overhead that is less significant in potential long runs of PetClaw applications. The solver also achieved superlinear
+strong scaling efficiency for an acoustics application on 1,024 cores. Furthermore, we provide reproducibility information for all the computational
+experiments presented in this thesis.</body>
+			</div>
+
+			<div class="clear">&nbsp;</div>
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>  
+
+	<div id="credits">
+		<p>&copy; 2011 David Ketcheson and Matteo Parsani<br />
+		<span class="small">Site design based on a template from <a href="http://andreasviklund.com/">Andreas Viklund</a></span></p>
+	</div>  
+</div>
+</body>
+</html>
