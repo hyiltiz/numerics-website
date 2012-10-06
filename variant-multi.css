@@ -80,8 +80,8 @@ li{padding-bottom:5px;}
 #credits a{color:#aaa;font-weight:400;}
 
 .full{clear: left; float: left;width: 99%;}
-.left{float:left;width:49%;}
-.right{float:right;width:48%;}
+.left{float:left;width:50%;}
+.right{float:right;width:50%;}
 .clear{clear:both;visibility:hidden;}
 .small{font-size: 0.6em;}
 
