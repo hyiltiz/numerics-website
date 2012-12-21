@@ -17,7 +17,8 @@ links = {
 
     'parsaniRK' :
     {
-    'code' : 'http://github.com/ketch/RK-opt'
+    'code' : 'http://github.com/ketch/RK-opt',
+    'Reproducibility repository' : 'http://github.com/ketch/optimized-erk-sd-rr'
     },
 
     'ketcheson2011a' :
