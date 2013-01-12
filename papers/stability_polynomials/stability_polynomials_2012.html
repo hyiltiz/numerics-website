@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Website of the Numerical Mathematics Group at KAUST" />
+	<meta name="keywords" content="numerical,mathematics,KAUST,Ketcheson" />
+	<meta name="author" content="David Ketcheson / Original design by andreasviklund.com" />
+	<link rel="stylesheet" type="text/css" href="/variant-multi.css" title="Variant Multi" media="all" />
+	<title>KAUST Numerical Mathematics Group: Publications</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+		<h1><a href="index.html">The Numerical Mathematics Group</a></h1>
+		<h2>@KAUST</h2>
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/people.html">People</a></li>
+			<li><a class="current" href="/publications.html">Publications</a></li>
+			<li><a href="/software.html">Software</a></li>
+			<li><a href="/openings.html">Open Positions</a></li>
+		</ul>
+	</div>
+	
+
+	<div id="main">
+
+
+		<div id="content">			
+			
+			<a class="button black" href="sharpclaw.pdf">Download PDF</a>
+			<a class="button black" href="https://bitbucket.org/ketch/sharpclaw/src/d71ab8721fb9">Download code</a>
+			<br><br>
+
+			<h4>High-order wave propagation algorithms for general hyperbolic systems</h4>
+			David I. Ketcheson, Matteo Parsani, and Randall J. LeVeque,
+			submitted.
+			
+			<br>
+			
+			<div class="box"><strong>Abstract.</strong>
+			<body>We present a finite volume method that is applicable to general hyperbolic PDEs, including non-conservative and spatially varying systems. The method can be extended to arbitrarily high order of accuracy and allows a well-balanced implementation for capturing solutions of balance laws near steady state. This well-balancing is achieved through the f-wave Riemann solver and a novel wave-slope WENO reconstruction procedure. The spatial discretization, like that of the well-known Clawpack software, is based on solving Riemann problems and calculating fluctuations (not fluxes). Our implementation employs weighted essentially non-oscillatory reconstruction in space and strong stability preserving Runge-Kutta integration in time. We demonstrate the wide applicability and advantageous properties of the method through numerical examples, including problems in non-conservative form, problems with spatially varying fluxes, and problems involving near-equilibrium solutions of balance laws.</body>
+			</div>
+
+			<div class="clear">&nbsp;</div>
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>  
+
+	<div id="credits">
+		<p>&copy; 2011 David Ketcheson and Matteo Parsani<br />
+		<span class="small">Site design based on a template from <a href="http://andreasviklund.com/">Andreas Viklund</a></span></p>
+	</div>  
+</div>
+</body>
+</html>
