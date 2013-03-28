@@ -53,14 +53,14 @@
 			
             Below you will find brief descriptions of and links to the software packages developed 
             within our group and with collaborators.  Smaller scripts used for a specific paper can be found
-            in links on our <a href="publications.html">publcations page</a>.</body><br><br>
+            in links on our <a href="publications.html">publications page</a>.</body><br><br>
 		</div><hr/>
 		<div id="content">
 			<h3><a name="petclaw">PyClaw</a></h3>
 				<a class="button black" href="pyclaw/index.html">Documentation</a>
 				<a class="button black" href="http://github.com/clawpack/pyclaw">Code</a>
 				<br><br>
-				<body>PyClaw is a Python interface to the algorithms of <strong>Clawpack</strong>.  PetClaw is an extension of the PyClaw package yielding a massively parallel version of Clawpack, using PETSc, that is scalable to tens of thousands of processors.  PyClaw also provides access to the algorithms of <strong>SharpClaw</strong> and is the recommended way to use them.</body>
+				<body>PyClaw is a parallel finite volume solver that includes the algorithms of <strong>Clawpack</strong> (2nd order, Lax-Wendroff-based) and <a href="http://numerics.kaust.edu.sa/papers/sharpclaw2011/sharpclaw2011.html">SharpClaw</a> (based on high order WENO and Runge-Kutta methods).  It is scalable to tens of thousands of processors and includes a convenient Python interface.  For more information, see our <a href="http://dx.doi.org/10.1137/110856976">paper in SISC</a>.</body>
 				<p><strong>Related packages</strong>:
 				<ul>
 				<li><a href="http://www.clawpack.org">Clawpack</a>: High resolution methods for hyperbolic PDEs (in Fortran)</li>
