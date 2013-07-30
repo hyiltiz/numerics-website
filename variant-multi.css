@@ -9,8 +9,8 @@ p{line-height:1.7em;margin-bottom:15px;}
 a{color: #0c5561;}
 a:hover{color:#333;}
 h1{color: #159696;font-family: candara, Georgia, serif;font-size:2.4em;}
-h2{color: #159696;font-family:Georgia,serif;font-size:2.2em;font-weight:400;margin:0 0 10px 0;}
-h3{color: #159696;font-family:Georgia,serif;font-size:1.6em;font-weight:400;margin:0 0 8px;}
+h2{color: #159696;font-family: candara, Georgia, serif;font-size:2.2em;font-weight:400;margin:0 0 10px 0;}
+h3{color: #159696;font-family: candara, Georgia, serif;font-size:1.6em;font-weight:400;margin:0 0 8px;}
 h4{font-size: 1.2em; color: #083848;font-family:Georgia,serif;font-weight:400;margin:0 0 8px;}
 ul,ol,dl{margin:0 0 20px 20px; padding:0;}
 li{padding-bottom:5px;}
@@ -28,8 +28,8 @@ li{padding-bottom:5px;}
 
 #menu{background-color: #5f5c48;height:40px;}
 #menu ul{float:right;height:40px;list-style:none;margin:0;padding:0 25px 0 0;}
-#menu ul li{background-color: #0a625e;display:block;float:left;margin:0 0 0 5px;padding:0;}
-#menu ul li a{background-color: #262311;color:#ddd;display:block;font-size:1.4em;padding:10px 12px;text-decoration:none;}
+#menu ul li{ background-color: #0a625e;display:block;float:left;margin:0 0 0 5px;padding:0;}
+#menu ul li a{ background-color: #262311;color:#ddd;display:block;font-size:1.4em;padding:10px 12px;text-decoration:none;}
 #menu ul li a:hover{color:#fff;}
 #menu ul li a.current{background-color: #eeeeee;color:#333;border-bottom:1px solid #eee;}
 
@@ -41,6 +41,7 @@ li{padding-bottom:5px;}
 
 #content{ word-break: keep-all; line-height: normal; width:72%;}
 #content ul.news li{font-size: 140%;}
+#content ul.news li a{font-weight: bold;}
 
 #sidebar{font-weight: bold; background:transparent url('images/sidebar-top.jpg') no-repeat scroll top left;float:right;width:25%;}
 #sidebar .sidebarbox { margin-left: 0; margin-bottom: 0px; margin-right: 0; margin-top: 0; background-color:#fff; border:1px solid #467aa7; 
