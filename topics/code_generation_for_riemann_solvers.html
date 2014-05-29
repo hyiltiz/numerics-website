@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Website of the Numerical Mathematics Group at KAUST" />
+	<meta name="keywords" content="numerical,mathematics,KAUST,Ketcheson" />
+	<meta name="author" content="David Ketcheson / Original design by andreasviklund.com" />
+	<link rel="stylesheet" type="text/css" href="/variant-multi.css" title="Variant Multi" media="all" />
+	<title>KAUST Numerical Mathematics Group</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+		<h1><a href="/index.html">The Numerical Mathematics Group</a></h1>
+		<h2>@KAUST</h2>
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/people.html">People</a></li>
+			<li><a class="current" href="/research.html">Research</a></li>
+			<li><a href="/publications.html">Publications</a></li>
+			<li><a href="/software.html">Software</a></li>
+			<li><a href="/openings.html">Open Positions</a></li>
+		</ul>
+	</div>
+	
+
+	<div id="main">
+	
+	<div id="sidebar">
+			<div class="sidebarbox">
+				
+				<h2>Potential thesis topics for students</h2>
+				<ul>
+					<li><a href="shocks_in_random_media.html">Shock waves in random media</a></li>
+					<li><a href="minimum_storage_runge_kutta.html">Min-storage Runge-Kutta pairs</a></li>
+					<li><a href="code_generation_for_riemann_solvers.html">Code gen for Riemann solvers</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="content">
+			<h2>Code generation and a domain-specific language for Riemann solvers</h2>
+			<img src="/img/riemann_solution.png" height=300 class="floatRight">
+			<p>Modern numerical methods for hyperbolic conservation laws rely heavily on the use of approximate Riemann solvers
+			in order to deal with discontinuities (shock waves) that arise in solutions.  Indeed, the Riemann solver is 
+			usually the only part of the code that needs to be changed in order to model different physical wave phenomena
+			like sound waves, water waves electromagnetic waves, and compressible fluids.</p>
+			
+			<p>It is therefore highly desirable
+			to encapsulate the Riemann solver routine behind a modular interface that separates it from the rest of the code.
+			This naturally leads to the possibility of also hiding the details of the Riemann solver implementation, and
+			automatically adapting them for the solution of different equations or for efficient computation on different
+			architectures.  Indeed, many Riemann solvers exhibit high
+			arithmetic intensity and are therefore ideally suited to implementation on GPUs and manycore architectures in 
+			which memory bandwidth and latency are the primary bottlenecks.</p>
+
+			<p>This project aims to develop a domain-specific language for Riemann solvers, and use that language as the
+			basis for automatic code generation in order to enable
+			<ul>
+				<li>Rapid prototyping of new applications by the use of a simple, intuitive interface for specifying a system of hyperbolic conservation laws</li>
+				<li>Fast solution computation on GPU and manycore architectures</li>
+			</ul>
+			Some initial work in this direction has been created in the form of Andy Terrel's <a href="ignition">ignition package</a>, but
+			the existing implementation has only very basic capabilities and is not properly incorporated into a complete conservation
+			law solver.  This project will involve fleshing out the domain-specific language, implementing a capability for generating
+			linear and nonlinear Riemann solvers compatible with <a href="http://clawpack.github.io">Clawpack</a>, and creating backends
+			that generate performant code on selected architectures.  The resulting tool will offer both faster application development
+			and better performance than existing software for hyperbolic conservation laws.</p>
+			</div>
+			<div class="clear">&nbsp;</div>
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+
+	<div id="credits">
+		<p>&copy; 2011 David Ketcheson and Matteo Parsani<br />
+		<span class="small">Site design based on a template from <a href="http://andreasviklund.com/">Andreas Viklund</a></span></p>
+	</div>  
+</div>
+</body>
+</html>

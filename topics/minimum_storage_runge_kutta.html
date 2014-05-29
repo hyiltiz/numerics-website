@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Website of the Numerical Mathematics Group at KAUST" />
+	<meta name="keywords" content="numerical,mathematics,KAUST,Ketcheson" />
+	<meta name="author" content="David Ketcheson / Original design by andreasviklund.com" />
+	<link rel="stylesheet" type="text/css" href="/variant-multi.css" title="Variant Multi" media="all" />
+	<title>KAUST Numerical Mathematics Group</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+		<h1><a href="/index.html">The Numerical Mathematics Group</a></h1>
+		<h2>@KAUST</h2>
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/people.html">People</a></li>
+			<li><a class="current" href="/research.html">Research</a></li>
+			<li><a href="/publications.html">Publications</a></li>
+			<li><a href="/software.html">Software</a></li>
+			<li><a href="/openings.html">Open Positions</a></li>
+		</ul>
+	</div>
+	
+
+	<div id="main">
+	
+	<div id="sidebar">
+			<div class="sidebarbox">
+				
+				<h2>Potential thesis topics for students</h2>
+				<ul>
+					<li><a href="shocks_in_random_media.html">Shock waves in random media</a></li>
+					<li><a href="minimum_storage_runge_kutta.html">Min-storage Runge-Kutta pairs</a></li>
+					<li><a href="code_generation_for_riemann_solvers.html">Code gen for Riemann solvers</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="content">
+			<h2>Practical minimum-storage Runge-Kutta pairs</h2>
+			<img src="/img/stabreg5.png" height=300 class="floatRight">
+			<p>High order methods of multistep or Runge-Kutta type generally require an amount of memory equal to several times the number of equations to be solved. When the system of equations comes from semi-discretization of a PDE, this memory requirement may be excessive. Low-storage Runge- Kutta methods that use memory equal to only two or three times the num- ber of equations have been developed over the last few decades. Recently, the existing low-storage algorithms have been clarified and analyzed in a new framework, leading to the discovery of even more efficient algorithms, including low-storage embedded Runge-Kutta methods.</p>
+<p>The goal of this project is to exploit this theoretical breakthrough to de- velop practical methods for industrial use. These methods will be optimized for a variety of properties relevant to important applications; such proper- ties include accuracy, linear and nonlinear stability, and dispersion/dissipation properties.</p>
+<p>The initial goal will be to develop methods that share the linear prop- erties (i.e., have the same stability polynomial) of current state-of-the-art methods, but use less memory. Then, the project will seek to develop low- storage methods with better properties than currently used methods. One benchmark against which to compare these methods is the work of Kennedy et. al. (2000). Finally, the methods developed would be applied to relevant test problems, including the DETEST ODE suite and some semi-discretized PDEs. Finally, one or more methods will be implemented and tested by our collaborators in a production code, such as CFDNS.</p>
+<p>The approach used will be to apply commercially available optimization software to this problem. The optimization problem is highly nonlinear, with complicated equality and inequality constraints, and involves on the order of 10-100 degrees of freedom. Hence sophisticated software will be required, and it is anticipated that a number of software packages may be applied, including MATLAB’s optimization toolbox, the Python package OpenOpt, and others.
+Further work in this area could involve allowing additional registers, determining what kinds of low-storage algorithms are then possible, and finding optimized methods with extra registers.</p>
+<p>An interesting related theoretical question is that of proving whether the known class of low-storage (two-register) methods includes all possible two-register methods. This question is connected to certain questions of circuit computability.</p>
+			</div>
+			<div class="clear">&nbsp;</div>
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+
+	<div id="credits">
+		<p>&copy; 2011 David Ketcheson and Matteo Parsani<br />
+		<span class="small">Site design based on a template from <a href="http://andreasviklund.com/">Andreas Viklund</a></span></p>
+	</div>  
+</div>
+</body>
+</html>
