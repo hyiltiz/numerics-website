@@ -41,7 +41,9 @@ li{padding-bottom:5px;}
 
 #content{ word-break: keep-all; line-height: normal; width:72%;}
 #content ul.news li{font-size: 140%;}
-#content ul.news li a{font-weight: bold;}
+#content ul.news li a{font-weight: bold;text-decoration:none}
+
+.greybg { background-color: #ded3a6; }
 
 #sidebar{font-weight: bold; background:transparent url('images/sidebar-top.jpg') no-repeat scroll top left;float:right;width:25%;}
 #sidebar .sidebarbox { margin-left: 0; margin-bottom: 0px; margin-right: 0; margin-top: 0; background-color:#fff; border:1px solid #467aa7; 

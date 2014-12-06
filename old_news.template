@@ -54,31 +54,13 @@
 		</div>
 
 		<div id="content">
-			<h2>What's new:</h2>
-			<ul class="news">
-                        <li><a href="/hpc3-2014">The 3rd [HPC]<sup>3</sup> Workshop</a> takes place Nov. 9-13, 2014</li>
-<li><a href="http://arxiv.org/abs/1309.6666">Dispersive diffraction in periodic materials</a> accepted to SIAM J. on Applied Math</li>
-<li><a href="http://arxiv.org/abs/1312.0216">Exponential stability regions paper</a> accepted to IMAJNA</li>
-<li><a href="http://arxiv.org/abs/1310.7168">Errors in partitioned Runge-Kutta methods</a> accepted to J. Sci. Comp.</li>
-
-                        <li> <i><a href="old_news.html"><span style="font-weight:normal">Older news items...</span></a></i></li>
+			<h3>Older news items, in reverse chronological order:</h3>
+			<ul>
+                        <OLDNEWS>
 			</ul>
-			<div class="greybg">
-			<p>Welcome to the website of the Numerical Mathematics Group at King Abdullah University of Science and Technology (KAUST).  <a href=research.html>Research within our group</a> focuses on the design, analysis, and implementation of <b>numerical methods for ordinary and partial differential equations</b>, as well as application of numerical methods to problems in <b>nonlinear wave propagation</b>.  Our work spans the numerical method development pipeline from theoretical numerical analysis, to computational experimentation, to software development and high performance computational science, in collaboration with application domain researchers.  Particular emphasis is placed on robustness, wide applicability, and efficiency.</p>
-                        </div>
 		</div>
-		<div id="content">
+		<div id="content">			
 			
-			<div class="left">
-				<h3>Ph.D. fellowships</h3>
-				<p>We are <a href="/openings.html#phd-fellowships">looking for outstanding students</a> interested in numerical analysis
-				and scientific computing.
-				</p>
-			</div>
-
-			<div class="clear">&nbsp;</div>
-        <strong>Please see the <a href="/openings.html">open positions page</a> for more information.</strong>
-		</div>
 		<div class="clear">&nbsp;</div>
 	</div>
 
